@@ -13,6 +13,11 @@ AI 를 전혀 쓰지 않았다면 표를 지우고 "이 과제에서 생성형 A
 
 | 날짜 | 도구 | 관련 기능 | 무엇을 물었나 | 결과를 어떻게 반영/수정했나 |
 |---|---|---|---|---|
-| 예시 2026-01-01 | ChatGPT | F1 | 방향키를 누르고 있는 동안 계속 움직이게 하는 방법 | `pygame.key.get_pressed()` 사용법만 참고, 화면 경계 처리는 직접 작성 |
+
 | 2026-11-19 | Claude | 기타 | Python 3.14 에서 pygame 설치가 실패하는 오류의 의미를 질문함 | pygame 이 설치되고 실행되는 Python 3.12 conda 환경으로 바꿔서 해결함 |
 | 2026-11-19 | Claude | F1 | 방향키로 플레이어를 좌우로 이동시키고 화면 밖으로 나가지 않게 제한하는 코드를 요청함 | 제안받은 키 입력 확인과 화면 경계 제한 코드를 Player.update 에 직접 작성하고, 게임을 실행해 확인함 |
+| 2026-11-20 | Claude | F2 | Player.shoot 에서 Bullet 만드는 방법 | 제안받는 코드를 entities.py에 직접 작성후 python main.py 로 실행하여 확인함 |
+| 2026-11-20 | Claude | F2 | Bullet.update 에서 총알을 위로 움직하고 화면 밖에 self.kill 하는 방법 | 제안받는 코드를 entities.py에 작성및 확인함 |
+| 2026-11-20 | Claude | F2 | 총알이 화면 밖으로 나가면 사라지는지 확인하는 방법 | 알려 준 대로 main.py의 update 에 임시로 print(len(self.bullets))를 넣어 확인함 |
+| 2026-11-20 | Claude | F2 | handle_events 에서 SPACE 키로 총알를 쏘는 코드 요청 | 제안받는 코드를 main.py에 직접 입력하고 실행한 뒤 확인함 | 
+| 2026-11-20 | Claude | F3 | groupcollide 로 총알과 적이 부딪히면 점수 올리는 코드와 왼쪽 위에 SCORE 를 표시하는 코드 | 제안받는 코드를 main.py의 update와 draw에 직접 입력한 뒤 시행해서 확인함 |
