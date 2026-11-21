@@ -20,3 +20,4 @@ AI 를 전혀 쓰지 않았다면 표를 지우고 "이 과제에서 생성형 A
 | 2026-11-20 | Claude | F2 | 총알이 화면 밖으로 나가면 사라지는지 확인하는 방법 | 알려 준 대로 main.py의 update 에 임시로 print(len(self.bullets))를 넣어 확인함 |
 | 2026-11-20 | Claude | F2 | handle_events 에서 SPACE 키로 총알를 쏘는 코드 요청 | 제안받는 코드를 main.py에 직접 입력하고 실행한 뒤 확인함 | 
 | 2026-11-20 | Claude | F3 | groupcollide 로 총알과 적이 부딪히면 점수 올리는 코드와 왼쪽 위에 SCORE 를 표시하는 코드 | 제안받는 코드를 main.py의 update와 draw에 직접 입력한 뒤 시행해서 확인함 |
+| 2026-11-21 | Claude | F4 | spritecollide 로 적이 player에 닿으면 life를 줄이는 코드, 적이 화면 아래로 지나가면 life 줄이는 코드, 생명이 0 이하이면 end_game 호출 코드, GAME OVER, SCORE 와 이번 판 점수 표시한 코드 | 제안받는 코드를 main.py에 직접 입력하고 실행하고 확인함 | 
